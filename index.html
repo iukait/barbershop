@@ -115,10 +115,44 @@
                     <button class="slider-pagination-button" type="button"></button>
                     <span class="visually-hidden"> 4 фото</span>
                 </li>
-
             </ol>                
         </section>
-
+        <section class="contact">
+            <h2 class="contact-title">Контакты</h2>
+            <h3 class="contact-subtitle">Барбершоп «Бородинский»</h3>
+            <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a href="tel:8800558628" class="contact-phone">8 800 55-86-28</a>
+            <h3 class="contact-subtitle">Время работы</h3>
+            <ul class="contact-schedule">
+                <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
+                <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
+            </ul>
+            <a href="#" class="button">Как проехать</a>
+            <a href="#" class="button">Обратная связь</a>
+        </section>
+        <section class="appointmen">
+            <h2 class="appointmen-title">Записаться</h2>
+            <p class="appointmen-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+            <form action="https://echo.htmlacademy.ru/" class="appointmen-form" method="post">
+                <p class="appointment-form-date">
+                    <label for="appointmen-date">Дата</label>
+                    <input type="text" name="appointmen-date" id="appointmen-date" placeholder="01.01.2020">
+                </p>
+                <p class="appointment-form-time">
+                    <label for="appointment-time">Время</label>
+                    <input type="text" name="appointmen-time"id="appointment-time" placeholder="10:10">
+                </p>
+                <p class="appointment-form-tel">
+                    <label for="appointment-tel">Телефон</label>
+                    <input type="text"name="appointmen-tel" id="appointment-tel" placeholder="+7 800 000-00-00">
+                </p>
+                <p class="appointment-form-name">
+                    <label for="appointment-name">Ваше имя</label>
+                    <input type="text" name="appointmen-name"id="appointment-name">
+                </p>
+                <button class="button" type="submit">Записаться</button>
+            </form>
+        </section>
     </main>    
 </body>
 </html>
