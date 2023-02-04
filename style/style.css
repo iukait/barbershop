@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background: #000;
+    color :#fff;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ol,ul{
+    list-style: none;
+}
+.title{    
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 35px;
+    color:#000;
+}
+
+.visually-hidden{
+    display: none;
+}
+.navigation{
+    display: flex;   
+}
+.navigation-list{
+    display: flex;     
+    /* justify-content: space-around;    */
+}
+.navigation-user{
+    margin-left:auto;
+    /* justify-content: space-around; */
+}
+.navigation-link{
+    font-family:'PT Sans Narrow', sans-serif;
+    line-height: 24px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-index{
+    background: url("../images/interior.jpg") no-repeat;
+    background-size: 100% auto;
+    padding: 40px;
+}
+.wrapper{
+    background-color: #FBF7F4;
+    background-image: url("../images/noisy.png");
+    color:#000;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.advantagest-desc{
+    font-weight: 400;
+}
+.advantages-list{
+    text-align: center;
+    font-family:'PT Sans Narrow', sans-serif;
+    font-style: 32px;
+    line-height: 35px;    
+}
+.advantages-title{
+text-transform: uppercase;
+}
+
+/* offer-section */
+.offer-list{
+    color:#000;
+    list-style: none;
+}
+.offer-price{
+    color: #AF7842;
+    font-size: 20px;
+    line-height: 28px;
+}
+.offer-name{
+    text-transform: uppercase;
+}
+.offer-button{
+    background-color: #000;
+}
+/* /contact */
+.contact-subtitle{
+    color: #AF7842;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.contact-address{
+    color:#000;    
+    font-style: normal;
+}
+.contact-phone{
+    color:#000;
+}
+.button{
+    background-color: #000;   
+    color: #fff; 
+}
+.btn-white-bg{
+    background-color: #fff;
+    color:#000 ;
+}
+/* appointment */
+.appointment-text{
+    font-style: 14px;
+    line-height: 20px;
+    text-align: left;
+    color:#595959;
+    font-style: normal;
+    font-weight: 400;
+
+}
+/* footer */
+.footer{
+    background-color:#242424 ;
+    background-image:url("../images/noisy.png");
+    display:flex;
+    justify-content: space-between;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.footer-contact-address{
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+
+
