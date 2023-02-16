@@ -16,159 +16,197 @@
 
 <body>
     <header class="header">
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a href="about.html" class="navigation-link">О нас</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="catalog.html" class="navigation-link">Каталог</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="faq.html" class="navigation-link">Частые вопросы</a>
-                </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">
-                        <span class="visually-hodden"> Поиск </span>
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">
-                        <span class="visually-hodden"> Корзина </span>
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">
-                        <span class="visually-hodden"> Вход </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-wrapper">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="about.html" class="navigation-link">О нас</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="catalog.html" class="navigation-link">Каталог</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="faq.html" class="navigation-link">Частые вопросы</a>
+                    </li>
+                </ul>
+                <ul class="navigation-user-list">
+                    <li class="navigation-user-item">
+                        <a href="#" class="navigation-user-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                viewBox="0 0 16 16">
+                                <path fill="#BDBDBD" fill-rule="evenodd"
+                                    d="M11 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.7 5.2C9.3 12.5 8 13 6.5 13a6.5 6.5 0 1 1 5.2-2.7l4 4-1.4 1.4-4-4Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="visually-hidden"> Поиск </span>
+                        </a>
+                    </li>
+                    <li class="navigation-user-item">
+                        <a href="#" class="navigation-user-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                viewBox="0 0 16 16">
+                                <path fill="#BDBDBD" fill-rule="evenodd"
+                                    d="m3 6 .6-5V0h8.8v1l.5 5h2.7l-.1 1.1-1 8-.1.9H1.6v-.9l-1-8L.3 6H3Zm2.1 0h5.8l-.4-4h-5L5 6Zm-1.7 8-.8-6h10.8l-.8 6H3.4Zm5.1-4.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="visually-hidden"> Корзина </span>
+                        </a>
+                    </li>
+                    <li class="navigation-user-item">
+                        <a href="#" class="navigation-user-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                viewBox="0 0 16 16">
+                                <g clip-path="url(#a)">
+                                    <path fill="#BDBDBD" fill-rule="evenodd"
+                                        d="M9 2h5v12H9v2h7V0H9v2ZM4.3 3.7 7.5 7H0v2h7.5l-3.2 3.3 1.4 1.4 5-5 .7-.7-.7-.7-5-5-1.4 1.5Z"
+                                        clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M0 0h16v16H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="log-in"> Вход </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main-index">
-        <h1 class="visually-hidden">Barber shop Baradinski</h1>
-        <img src="images/logo-full-dark.svg" alt="логотип Барбер шоп Бородинский" class="logo" width="367px"
-            height="162px" />
-        <section class="advantages">
-            <h2 class="visually-hidden">Преймущества</h2>
-            <ul class="advantages-list">
-                <li class="advantagest-item">
-                    <h3 class="advantages-title">Быстро</h3>
-                    <p class="advantagest-desc"> Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы —
-                        счастливый обладатель стильной стрижки-минутки! </p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantagest-title">Круто</h3>
-                    <p class="advantagest-desc">
-                        Забудьте, как вы стриглись раньше.Мы сделаем из вас звезду футбола или кино! Во всяком случае
-                        внешне.</p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantagest-title">Дорого</h3>
-                    <p class="advantagest-desc">Наши мастера — профессионалы своего дела и не могут стоить дешево.к тому
-                        же, разве цена не даёт определённый статус? </p>
-                </li>
-            </ul>
-        </section>
-        <div class="wrapper">
-            <section class="offer">
-                <h2 class="offer-tittle title">Популярные услуги</h2>
-                <ul class="offer-list">
-                    <li class="offer-item">
-                        <span class="offer-name">Стрижка машинкой</span>
-                        <p class="offer-price">800 ₽</p>
+        <div class="main-wrapper">
+            <h1 class="visually-hidden">Barber shop Baradinski</h1>
+            <img src="images/logo-full-dark.svg" alt="логотип Барбер шоп Бородинский" class="logo" width="367px"
+                height="162px" />
+            <!-- advantages -->
+            <section class="advantages">
+                <h2 class="visually-hidden">Преймущества</h2>
+                <ul class="advantages-list">
+                    <li class="advantages-item">
+                        <h3 class="advantages-title">Быстро</h3>
+                        <p class="advantages-desc"> Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы —
+                            счастливый обладатель стильной стрижки-минутки! </p>
                     </li>
-                    <li class="offer-item">
-                        <span class="offer-name">Стрижка усов</span>
-                        <p class="offer-price">1200 ₽</p>
+                    <li class="advantages-item">
+                        <h3 class="advantages-title">Круто</h3>
+                        <p class="advantages-desc"> Забудьте, как вы стриглись раньше.Мы сделаем из вас звезду футбола
+                            или кино! Во всяком
+                            случае внешне.</p>
                     </li>
-                    <li class="offer-item">
-                        <span class="offer-name">Груминг</span>
-                        <p class="offer-price">400 ₽</p>
-                    </li>
-                    <li class="offer-item">
-                        <span class="offer-name">Комплексная стрижка</span>
-                        <p class="offer-price">2300 ₽</p>
+                    <li class="advantages-item">
+                        <h3 class="advantages-title">Дорого</h3>
+                        <p class="advantages-desc">Наши мастера — профессионалы своего дела и не могут стоить дешево.к
+                            тому же, разве цена не даёт определённый статус? </p>
                     </li>
                 </ul>
-                <a href="#" class="button offer-button">Посмотреть все</a>
             </section>
-            <section class="gallery">
-                <h2 class="gallery-title title">Фотогалерея</h2>
-                <img src="images/foto-man.jpg" alt="Примеры работ" class="img-slider" width="390px" height="250px" />
-                <button class="slider-btn slider-prev" type="button"></button>
-                <span class="visually-hidden">Предыдущие фото</span>
-                <button class="slider-btn slider-next" type="button"></button>
-                <span class="visually-hidden">Следующее фото</span>
-                <ol class="slider-pagination">
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">1
-                            фото</button>
-                        <span class="visually-hidden"> 1 фото</span>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">2 фото</button>
-                        <span class="visually-hidden"> 2 фото</span>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">3 фото</button>
-                        <span class="visually-hidden"> 3 фото</span>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">4 фото</button>
-                        <span class="visually-hidden"> 4 фото</span>
-                    </li>
-                </ol>
-                <button class="slider-button slider-button-prev">Предыдущие фото</button>
-                <button class="slider-button slider-button-next ">Следующее фото</button>
-            </section>
-        </div>
-        <div class="wrapper">
-            <section class="contact">
-                <h2 class="contact-title title">Контакты</h2>
-                <h3 class="contact-subtitle">Барбершоп «Бородинский»</h3>
-                <address class="contact-address address">
-                    <p class="contact-address-text">
-                        Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            <!-- offer -->
+            <div class="wrapper">
+                <section class="offer">
+                    <h2 class="offer-title">Популярные услуги</h2>
+                    <ul class="offer-list">
+                        <li class="offer-item">
+                            <span class="offer-name">Стрижка машинкой</span>
+                            <p class="offer-price">800 ₽</p>
+                        </li>
+                        <li class="offer-item">
+                            <span class="offer-name">Стрижка усов</span>
+                            <p class="offer-price">1200 ₽</p>
+                        </li>
+                        <li class="offer-item">
+                            <span class="offer-name">Груминг</span>
+                            <p class="offer-price">400 ₽</p>
+                        </li>
+                        <li class="offer-item">
+                            <span class="offer-name">Комплексная стрижка</span>
+                            <p class="offer-price">2300 ₽</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="button offer-button">Посмотреть все</a>
+                </section>
+                <!-- gallery  -->
+                <section class="gallery">
+                    <h2 class="gallery-title title">Фотогалерея</h2>
+                    <img src="images/foto-man.jpg" alt="Примеры работ" class="img-slider" width="390px"
+                        height="250px" />
+                    <button class="slider-btn slider-prev" type="button"></button>
+                    <span class="visually-hidden">Предыдущие фото</span>
+                    <button class="slider-btn slider-next" type="button"></button>
+                    <span class="visually-hidden">Следующее фото</span>
+                    <ol class="slider-pagination">
+                        <li class="slider-pagination-item">
+                            <button class="slider-pagination-button slider-pagination-button-current" type="button">1
+                                фото</button>
+                            <span class="visually-hidden"> 1 фото</span>
+                        </li>
+                        <li class="slider-pagination-item">
+                            <button class="slider-pagination-button" type="button">2 фото</button>
+                            <span class="visually-hidden"> 2 фото</span>
+                        </li>
+                        <li class="slider-pagination-item">
+                            <button class="slider-pagination-button" type="button">3 фото</button>
+                            <span class="visually-hidden"> 3 фото</span>
+                        </li>
+                        <li class="slider-pagination-item">
+                            <button class="slider-pagination-button" type="button">4 фото</button>
+                            <span class="visually-hidden"> 4 фото</span>
+                        </li>
+                    </ol>
+                    <button class="slider-button slider-button-prev">Предыдущие фото</button>
+                    <button class="slider-button slider-button-next ">Следующее фото</button>
+                </section>
+            </div>
+            <!-- contact -->
+            <div class="wrapper">
+                <section class="contact">
+                    <h2 class="contact-title title">Контакты</h2>
+                    <h3 class="contact-subtitle">Барбершоп «Бородинский»</h3>
+                    <address class="contact-address address">
+                        <p class="contact-address-text">
+                            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                        </p>
+                        <a href="tel:8800558628" class="contact-phone">8 800 55-86-28</a>
+                    </address>
+                    <h3 class="contact-subtitle">Время работы</h3>
+                    <ul class="contact-schedule">
+                        <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
+                        <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
+                    </ul>
+                    <a href="#" class="button btn-black-bg">Как проехать</a>
+                    <a href="#" class="button btn-white-bg">Обратная связь</a>
+                </section>
+                <!-- appoitment  -->
+                <section class="appointmen">
+                    <h2 class="appointment-title title">Записаться</h2>
+                    <p class="appointment-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+                        брони.
                     </p>
-                    <a href="tel:8800558628" class="contact-phone">8 800 55-86-28</a>
-                </address>
-                <h3 class="contact-subtitle">Время работы</h3>
-                <ul class="contact-schedule">
-                    <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
-                    <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
-                </ul>
-                <a href="#" class="button btn-black-bg">Как проехать</a>
-                <a href="#" class="button btn-white-bg">Обратная связь</a>
-            </section>
-            <section class="appointmen">
-                <h2 class="appointment-title title">Записаться</h2>
-                <p class="appointment-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
-                </p>
-                <form action="https://echo.htmlacademy.ru/" class="appointmen-form" method="post">
-                    <div class="appointment-form-date">
-                        <label for="appointment-date">Дата</label>
-                        <input type="text" name="appointmen-date" id="appointmen-date" placeholder="01.01.2020" />
-                    </div>
-                    <div class="appointment-form-time">
-                        <label for="appointment-time">Время</label>
-                        <input type="text" name="appointmen-time" id="appointment-time" placeholder="10:10" />
-                    </div>
-                    <div class="appointment-form-tel">
-                        <label for="appointment-tel">Телефон</label>
-                        <input type="text" name="appointmen-tel" id="appointment-tel" placeholder="+7 800 000-00-00" />
-                    </div>
-                    <div class="appointment-form-name">
-                        <label for="appointment-name">Ваше имя</label>
-                        <input type="text" name="appointmen-name" id="appointment-name" />
-                    </div>
-                    <button class="button" type="submit">Записаться</button>
-                </form>
-            </section>
+                    <form action="https://echo.htmlacademy.ru/" class="appointmen-form" method="post">
+                        <div class="appointment-form-date">
+                            <label for="appointment-date">Дата</label>
+                            <input type="text" name="appointmen-date" id="appointmen-date" placeholder="01.01.2020" />
+                        </div>
+                        <div class="appointment-form-time">
+                            <label for="appointment-time">Время</label>
+                            <input type="text" name="appointmen-time" id="appointment-time" placeholder="10:10" />
+                        </div>
+                        <div class="appointment-form-tel">
+                            <label for="appointment-tel">Телефон</label>
+                            <input type="text" name="appointmen-tel" id="appointment-tel"
+                                placeholder="+7 800 000-00-00" />
+                        </div>
+                        <div class="appointment-form-name">
+                            <label for="appointment-name">Ваше имя</label>
+                            <input type="text" name="appointmen-name" id="appointment-name" />
+                        </div>
+                        <button class="button" type="submit">Записаться</button>
+                    </form>
+                </section>
+            </div>
         </div>
     </main>
+    <!-- footer  -->
     <footer class="footer">
         <section class="footer-contact">
             <h2 class="visually-hidden">Контакты</h2>

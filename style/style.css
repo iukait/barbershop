@@ -1,142 +1,340 @@
-*{
-    box-sizing: border-box;
+html {
+    height: 100%
+}
+
+body {
     margin: 0;
     padding: 0;
-}
-body{
+    width: 1020px;
+    margin: 0 auto;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    background: #000;
-    color :#fff;
+    color: #fff;
     font-weight: 700;
-}
-a{
-    text-decoration: none;
-    color:#fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-ol,ul{
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* header */
+.header {
+    background: #000;
+}
+
+.header-wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* nav */
+.navigation {
+    display: flex;
+}
+
+.navigation-list {
     list-style: none;
-}
-.title{    
-    text-transform: uppercase;
-    font-size: 32px;
-    line-height: 35px;
-    color:#000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
 }
 
-.visually-hidden{
-    display: none;
-}
-.navigation{
-    display: flex;   
-}
-.navigation-list{
-    display: flex;     
-    /* justify-content: space-around;    */
-}
-.navigation-user{
-    margin-left:auto;
-    /* justify-content: space-around; */
-}
-.navigation-link{
-    font-family:'PT Sans Narrow', sans-serif;
+.navigation-link {
+    display: block;
+    font-family: 'PT Sans Narrow', sans-serif;
     line-height: 24px;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 24px 20px;
+}
+
+.navigation-user-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.navigation-user-item {
+    padding: 24px 20px;
+}
+
+
+.navigation-user-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.log-in {
     text-transform: uppercase;
     text-align: center;
 }
-.main-index{
-    background: url("../images/interior.jpg") no-repeat;
-    background-size: 100% auto;
-    padding: 40px;
+
+/* main  */
+.main-wrapper {
+    width: 940px;
+    margin: 0 auto;
+
 }
-.wrapper{
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.main-index {
+    background-color: #000;
+    background-image: url("../images/interior.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: 57px 40px;
+    flex-grow: 1;
+
+}
+
+.wrapper {
     background-color: #FBF7F4;
     background-image: url("../images/noisy.png");
-    color:#000;
+    color: #000;
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
-.advantagest-desc{
-    font-weight: 400;
+
+.title {
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 35px;
+    color: #000;
 }
-.advantages-list{
+
+/* advantages */
+.advantages-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    font-family:'PT Sans Narrow', sans-serif;
-    font-style: 32px;
-    line-height: 35px;    
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 35px;
+    margin-bottom: 48px;
 }
-.advantages-title{
-text-transform: uppercase;
+
+.advantages-item {
+    width: 277px;
+}
+
+.advantages-desc {
+    font-weight: 400;
+    margin: 0;
+}
+
+.advantages-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 56px;
 }
 
 /* offer-section */
-.offer-list{
-    color:#000;
-    list-style: none;
+.offer {
+    margin-bottom: 31px;
 }
-.offer-price{
+
+.offer-title {
+    margin: 0;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.offer-list {
+    color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.offer-item {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+}
+
+.offer-price {
+    margin: 0;
     color: #AF7842;
     font-size: 20px;
     line-height: 28px;
 }
-.offer-name{
+
+.offer-name {
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
 }
-.offer-button{
+
+.offer-button {
     background-color: #000;
+    padding: 14px 44px 14px 20px;
+    margin-bottom: 54px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
 }
+
+/* gallery */
+.gallery {
+    width: 390px;
+}
+
+.gallery-title {
+    margin: 0;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
 /* /contact */
-.contact-subtitle{
+.contact {
+    width: 352px;
+}
+
+.contact-subtitle {
     color: #AF7842;
     font-size: 20px;
     line-height: 28px;
 
 }
-.contact-address{
-    color:#000;    
+
+.contact-address {
+    color: #000;
     font-style: normal;
 }
-.contact-phone{
-    color:#000;
+
+.contact-phone {
+    color: #000;
 }
-.button{
-    background-color: #000;   
-    color: #fff; 
+
+.button {
+    background-color: #000;
+    color: #fff;
 }
-.btn-white-bg{
+
+.btn-white-bg {
     background-color: #fff;
-    color:#000 ;
+    color: #000;
 }
+
 /* appointment */
-.appointment-text{
+.appointment-text {
+    width: 469px;
     font-style: 14px;
     line-height: 20px;
     text-align: left;
-    color:#595959;
+    color: #595959;
     font-style: normal;
     font-weight: 400;
 
 }
+
 /* footer */
-.footer{
-    background-color:#242424 ;
-    background-image:url("../images/noisy.png");
-    display:flex;
+.footer {
+    background-color: #242424;
+    background-image: url("../images/noisy.png");
+    display: flex;
     justify-content: space-between;
-    padding-left:40px;
+    padding-left: 40px;
     padding-right: 40px;
-    padding-top: 40px;
+
 }
-.footer-contact-address{
+
+.footer-contact {
+    width: 185px;
+}
+
+.footer-offer {
+    width: 280px;
+}
+
+.footer-contact-address {
     font-size: 14px;
     line-height: 20px;
     font-style: normal;
+
 }
 
+.footer-social {
+    width: 185px;
+}
 
+/* CATALOG   */
+.navigation-logo {
+    width: 140px;
+    margin-right: 100px;
+}
 
+.main-catalog {
+    color: #242424;
+    background-color: #f3f3f3;
+    background-image: url("../images/noisy.png");
+    background-repeat: repeat;
+}
+
+.main-catalog-wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* bread crumbs */
+.bread-crumbs-list {
+    list-style: none;
+    display: flex;
+
+}
+
+/* catalog  */
+.catalog-products {
+    display: flex;
+}
+
+.catalog-product-right {
+    width: 700px;
+}
+
+/* filters  */
+.catalog-filter {
+    width: 220px;
+    margin-right: 20px;
+}
